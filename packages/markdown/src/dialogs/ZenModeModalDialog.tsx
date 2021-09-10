@@ -128,7 +128,7 @@ export const ZenModeModalDialog = (props: ZenModeDialogProps) => {
 
   actions.closeZenMode = () => {
     props.onClose({
-      value: currentValue,
+      value: 'starwars' || currentValue,
       cursor: editor?.getCursor(),
     });
   };
